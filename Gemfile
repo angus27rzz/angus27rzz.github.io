@@ -24,3 +24,5 @@ gem "webrick", "~> 1.7"
 gem 'jekyll-scholar', group: :jekyll_plugins
 gem 'jekyll-toc'
 gem 'jemoji'
+
+gem "nokogiri", force_ruby_platform: true
