@@ -3,6 +3,10 @@
 -
   type: github
   icon: 'fab fa-github'
+-
+  type: wandb
+  icon: 'fas fa-flask'  # Custom class for your wandb icon
+  url: 'https://wandb.ai/angus27'  # Replace with your actual wandb profile link
 # -
   # type: twitter
   # icon: 'fab fa-twitter'
@@ -18,7 +22,6 @@
   type: scholar
   icon: "fas fa-graduation-cap"
   url: 'https://scholar.google.com/citations?user=ptd-FvgAAAAJ&hl=en'
-  noblank: true
 -
 #   type: rss
 #   icon: 'fas fa-rss'

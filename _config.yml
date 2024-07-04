@@ -21,7 +21,7 @@ timezone:
 
 title: vr                          # the main title
 
-tagline: A blog for nice things.   # it will display as the sub-title
+tagline: Random Tales.   # it will display as the sub-title
 
 # description: A blog for nice things.
 
@@ -41,6 +41,7 @@ social:
   email: angusvr10@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    # - https://scholar.google.com/citations?user=ptd-FvgAAAAJ&hl=en
     # - https://twitter.com/username      # change to your twitter homepage
     # - https://github.com/vrizz       # change to your github homepage
     # Uncomment below to add more social links
@@ -70,7 +71,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: light # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -80,7 +81,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/vr-logo.png
+avatar: assets/logo3.png
 # assets/PashminaS.png
 
 # boolean type, the global switch for ToC in posts.
@@ -106,6 +107,9 @@ comments:
     lang:              # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
+include:
+  - assets/css/custom.css
+  
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
