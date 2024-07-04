@@ -25,4 +25,4 @@ gem 'jekyll-scholar', group: :jekyll_plugins
 gem 'jekyll-toc'
 gem 'jemoji'
 
-gem "nokogiri", force_ruby_platform: true
+gem "racc", "~> 1.4.0"
