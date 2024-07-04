@@ -26,3 +26,6 @@ gem "webrick", "~> 1.7"
 gem 'jekyll-scholar', group: :jekyll_plugins
 gem 'jekyll-toc'
 gem 'jemoji'
+
+
+gem 'jekyll', '4.2.0'
