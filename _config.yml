@@ -19,9 +19,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: vr                          # the main title
+title: vari                       # the main title
 
-tagline: Random Tales.   # it will display as the sub-title
+tagline:  Random Tales   # it will display as the sub-title
 
 # description: A blog for nice things.
 

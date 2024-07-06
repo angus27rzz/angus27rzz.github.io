@@ -15,15 +15,16 @@ _Me on a windy day in Scotland._
 
 Hello there! :wave:, I'm Vale and this my blog.
 
-For the past five years, I've had the privilege of working as a research assistant at the Technical University of Munich (TUM), specifically at the Chair of Signal Processing (MSV). Currently, I am writing my doctoral dissertation, while exploring job opportunities in the exciting field of artificial intelligence and machine learning.
+For the past five years, I've had the privilege of working as a research assistant at the [Technical University of Munich (TUM)](https://www.tum.de/en/), specifically at the [Chair of Signal Processing (MSV)](https://www.ce.cit.tum.de/msv/home/). Currently, I am writing my doctoral dissertation, while exploring job opportunities in the exciting field of artificial intelligence and machine learning.
 
 My research has focused on applying deep learning to improve the physical layer of wireless communications, specifically addressing challenges such as distribution shifts, feedback schemes, channel aging, and precoding optimization using graph-neural networks.
 During my time at TUM, I collaborated with Futurewei Technologies (based in USA) and was responsible for both the tutorials and programming projects for the Numerical Linear Algebra for Signal Processing course in the Master’s Degree Program. :woman_teacher:
 
-I hold both a BSc and an MSc (with honors) in Telecommunications Engineering from Politecnico di Milano. During my master’s studies, I also worked as a signal processing student at Intel Corporation (Munich branch) during the "5G era." :nerd_face:
+I hold both a BSc and an MSc (with honors) in Telecommunications Engineering from Politecnico di Milano. During my master’s studies, I did an exchange at TUM and I worked as a signal processing student at Intel Corporation (Munich branch) during the "5G era." :nerd_face:
 
 Recently, I discovered Weights & Biases (wandb), an awesome tool for tracking machine learning experiments. Feel free to check my [ML portfolio](https://wandb.ai/angus27) there! 
 
-Aside from my research, I'm truly passionate about everything AI and machine learning-related, and, this is the place where I collect my notes about all the nice things I came across during my work as young scientist at TUM.
+Aside from my research, I'm truly passionate about everything AI and machine learning-related, and, this is the place where I collect my notes about all the nice things I came across during my work as young scientist at TUM. :mortar_board: <span><img src="/assets/tum.png" alt="tum" style="width: 1em; cursor: default; overflow: hidden;"></span> :hugs:
+
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. {: .prompt-tip } -->
