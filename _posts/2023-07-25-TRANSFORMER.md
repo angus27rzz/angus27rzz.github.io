@@ -111,10 +111,12 @@ Another motivation for positional encoding is given in the paper: *“We chose t
 
 In essence, what the authors are saying is that we can always find a $2 \times 2$ matrix $\vM$ that only depends on $k$ such that
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation*}
 \vM \begin{bmatrix} \sin(\omega_i \cdot pos) \\ \cos(\omega_i \cdot pos) \end{bmatrix} = \begin{bmatrix} \sin(\omega_i \cdot (pos+k)) \\ \cos(\omega_i \cdot (pos+k)) \end{bmatrix}
 \end{equation*}
 $$
+</div>
 
 where $\omega_i = \frac{1}{10000^{2i/d_{\text{model}}}}$.
 

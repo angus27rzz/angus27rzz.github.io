@@ -38,16 +38,20 @@ In the Bayesian framework, we start by specifying a prior distribution over the 
 
 Given our dataset we then look for the *posterior* distribution $p(\param \mid X, Y)$ using the Bayes' theorem:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 \label{eq:bayes}
 p(\param \mid X, Y) = \frac{p(Y\mid X, \param) p(\param)}{p(Y\mid X)}
 \end{equation}$$
+</div>
 
 In Bayesian inference, a critical component is the normalizer, also referred to as *model evidence*:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 p(Y \mid X) = \int p(Y \mid X, \param) \, p(\param) \, d\param.
 \end{equation}$$
+</div>
 
 However, this marginalization cannot be done analytically.
 
@@ -55,15 +59,19 @@ However, this marginalization cannot be done analytically.
 
 As the true posterior $p(\param \mid X, Y)$ is hard to compute we define a *variational* distribution $q_{\bphi}(\param)$, parameterized by $\bphi$ which is simple to evaluate. We would like our approximating distribution to be as close as possible to the true posterior. Therefore, in other words we want to minimize the KL divergence between the two distributions:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 \text{KL}(q_{\bphi}(\param) \| p(\param \mid X, Y)) = \int q_{\bphi}(\param) \log \left( \frac{q_{\bphi}(\param)}{p(\param \mid X, Y)} \right) \, d\param .
 \end{equation}$$
+</div>
 
 It can be shown that minimizing this divergence is equivalent to maximizing the *evidence lower bound* (ELBO) expression:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 \text{ELBO} \coloneqqf \int q_{\bphi}(\param) \log p(Y \mid X, \param) \, d\param  - \text{KL}(q_{\bphi}(\param) \| p(\param)) \leq \log p(Y \mid X) \coloneqqf \text{log evidence}.
 \end{equation}$$
+</div>
 
 
 ## Monte-Carlo Dropout
@@ -99,9 +107,11 @@ For uncertainty in classification we can consider different measures that captur
 One possible approach is to look at the **predictive entropy**. 
 This quantity represents the average amount of information within the predictive distribution:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 H[y \mid x, \mathcal{D}_{\text{train}}] := -\sum_c p(y = c \mid \vx, \mathcal{D}_{\text{train}}) \log p(y = c \mid \vx, \mathcal{D}_{\text{train}})
 \end{equation}$$
+</div>
 
 where the summation is over all possible classes $c$ that $y$ can assume. For a given test point $\vx$, the predictive entropy reaches its highest value when all classes are predicted with equal probability (indicating complete uncertainty). Conversely, it reaches its lowest value of zero when one class is predicted with a probability of 1 and all other classes with a probability of 0 (indicating complete certainty in the prediction).
 
@@ -112,17 +122,21 @@ In formulas we replace $p(y = c \mid \vx, \mathcal{D}_{\text{train}})$ with $\fr
 
 A *better* alternative to the predictive entropy is the **mutual information** between the prediction $y$ and the posterior over the model parameters $\param$:
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$\begin{equation}
 I[y, \param \mid \vx, \mathcal{D}_{\text{train}}] \coloneqqf H[y \mid \vx, \mathcal{D}_{\text{train}}] - \mathbb{E}_{p(\param \mid \mathcal{D}_{\text{train}})} \left[ H[y \mid \vx, \param] \right]
 \end{equation}$$
+</div>
 
 The expression can be then approximated as
 
+<div style="overflow-x: auto; white-space: nowrap;">
 $$
 \begin{align}
 I[y, \param \mid \vx, \mathcal{D}_{\text{train}}] &\coloneqqf \textcolor{magenta}{- \sum_{c} \frac{1}{T} \sum_{t} p(y = c \mid \vx, \hat{\param}_{t}) \log \frac{1}{T} \sum_{t} p(y = c \mid \vx, \hat{\param}_{t})} \nonumber \\
 &\textcolor{orange}{+ \frac{1}{T} \sum_{c,t} p(y = c \mid \vx, \hat{\param}_{t}) \log p(y = c \mid \vx, \hat{\param}_{t})} \label{eq:mutual-info}
 \end{align}$$
+</div>
 
 where the term in magenta denotes the entropy, and the term in orange denotes the negative average of the entropies.
 
