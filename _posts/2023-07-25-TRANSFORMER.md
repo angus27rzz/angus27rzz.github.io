@@ -7,7 +7,7 @@ math: true
 mermaid: true
 ---
 
-Transformers have been proposed in the paper "Attention is all you need" by Ashish Vaswani *et al.* {% cite attn --file ref_transformer %}. Transformers are intricately related to Large Language Models (LLMs), as LLMs are built upon the transformer architecture.
+Transformers have been proposed in the paper "Attention is all you need" by Ashish Vaswani *et al.* {% cite attn --file ref_transformer %}. Transformers are intrinsically related to Large Language Models (LLMs), as LLMs are built upon the transformer architecture.
 
 <p style="text-align:center;"><em>But what exactly are transformers?</em></p> 
 
